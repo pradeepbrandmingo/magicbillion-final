@@ -2585,6 +2585,17 @@ body {
   transform: translateY(0);
 }
 
+.testi-top-home {
+  margin-top: 110px !important;
+  margin-bottom: -30px!important;
+}
+@media (max-width: 768px) {
+  .testi-top-home {
+    margin-top: 24px !important;
+    margin-bottom: 10px !important;
+  }
+}
+
 .testi-subtitle {
   display: block;
   font-family: var(--body-font);

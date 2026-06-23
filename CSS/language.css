@@ -1091,7 +1091,7 @@ section {
 }
 
 .exam-prep-nav {
-  display: none; /* Hidden on desktop */
+  display: flex;
   gap: 16px;
   margin-top: 10px;
 }
@@ -1132,11 +1132,11 @@ section {
 .exam-prep-track {
   display: flex;
   gap: 24px;
-  overflow-x: visible; /* Prevents scrollbar/scrolling on desktop */
+  overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
   padding: 10px 4px;
-  scroll-snap-type: none; /* No snapping on desktop */
+  scroll-snap-type: x mandatory;
 }
 
 .exam-prep-track::-webkit-scrollbar {
@@ -1262,7 +1262,7 @@ section {
 
 /* Scroll progress bar */
 .scroll-progress {
-  display: none; /* Hidden on desktop */
+  display: block;
   height: 4px;
   background: #e5e5e5;
   border-radius: 2px;
